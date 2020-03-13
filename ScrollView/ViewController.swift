@@ -36,6 +36,8 @@ class ViewController: UIViewController {
     
     func addLogoViewToMainScrollWithCGRect() {
         
+        // 'CGRect' located a place on the super view
+        // which can move with the super view
         let logoView = UIImageView(frame: CGRect(x: 25, y: 25, width: 249, height: 249))
         logoView.image = UIImage(named: "logo")
         
@@ -62,6 +64,8 @@ class ViewController: UIViewController {
         
         secondScroll.addSubview(logoView)
         
+        // 'Anchor' means the fixed location on the super view
+        // which can't move in the super view
         logoView.topAnchor.constraint(equalTo: secondScroll.frameLayoutGuide.topAnchor, constant: 25).isActive = true
         logoView.leadingAnchor.constraint(equalTo: secondScroll.frameLayoutGuide.leadingAnchor, constant: 25).isActive = true
         
