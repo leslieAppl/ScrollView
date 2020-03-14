@@ -18,8 +18,8 @@ class SecondVC: UIViewController {
         
         scrollView.delegate = self
         
-        scrollView.minimumZoomScale = 0.01
-        scrollView.maximumZoomScale = 100.0
+        scrollView.minimumZoomScale = 1.0
+        scrollView.maximumZoomScale = 4.0
         
     }
 
